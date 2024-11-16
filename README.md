@@ -14,6 +14,7 @@ Como primer paso debemos crear un nuevo proyecto en angular para eso utilizamos 
 Crearemos la carpeta services donde solo crearemos un archivo nuevo nombrado `user.service.ts`.
 apiUrl: Es una variable privada que almacena la URL base de la API que vamos a consumir.
 constructor(private http: HttpClient): Inyecta el servicio HttpClient de Angular, que se utilizará para hacer las solicitudes HTTP.
+
 ● Pregunta: ¿Qué hace el método getUsers en este servicio?
 
 El método getUsers() recupera una lista de usuarios desde la API especificada o en este caso la que consigue de apiUrl.
@@ -34,6 +35,7 @@ Cumple con la función de llamar al método loadUsers cuando el componente se in
 ## Crear el Componente de la Tabla de Usuarios
 
 La tabla se creo desde el mismo .ts ya que utilizando las comillas siguientes "``" podemos hacer refrencias al formato que queremos sin la necesidad de poner otro html o un css.
+
 ● ¿Para qué sirve el bucle *ngFor en Angular?
 Se utiliza para repetir un elemento HTML para cada elemento de una colección. Básicamente, permite iterar sobre una lista de datos obtiene una lista de usuarios desde la API y la almacena en la propiedad users.
 
